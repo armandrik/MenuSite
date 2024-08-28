@@ -1,10 +1,11 @@
-function App() {
+import { Header } from "./components/header/Header";
 
+function App() {
   return (
-    <>
-      <h1>menu - site</h1>
-    </>
-  )
+    <div dir="rtl">
+      <Header />
+    </div>
+  );
 }
 
-export default App
+export default App;
