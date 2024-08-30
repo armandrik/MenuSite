@@ -20,8 +20,8 @@ export const ActionButtons = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between gap-2 mobile:gap-0">
-      <button className="flex items-center justify-center gap-1 px-4 h-12 font-DanaMedium bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-all laptop:text-sm laptop:px-3 laptop:h-11">
+    <div className="flex items-center justify-between gap-2 z-50 mobile:gap-0">
+      <button className="flex items-center justify-center gap-1 px-4 h-12 font-DanaMedium bg-indigo-500 text-white rounded-xl hover:bg-indigo-600 transition-all laptop:text-sm laptop:px-3 laptop:h-11">
         ورود / ثبت‌نام
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +41,7 @@ export const ActionButtons = () => {
       <div className="relative">
         <button
           onClick={() => setDisplayThemeDropDown(!displayThemeDropDown)}
-          className="relative w-24 h-12 flex items-center justify-center gap-1 font-DanaMedium bg-transparent border-2 border-slate-200 rounded-xl text-zinc-700 dark:text-white hover:border-blue-600 hover:text-blue-600 dark:hover:border-blue-500/80 transition-all laptop:text-sm laptop:w-20 laptop:h-11 mobile:invisible mobile:hidden"
+          className="relative w-24 h-12 flex items-center justify-center gap-1 font-DanaMedium bg-transparent border-2 border-slate-200 rounded-xl text-zinc-700 dark:text-white dark:border-gray-600 hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-300 dark:hover:border-indigo-300 transition-all laptop:text-sm laptop:w-20 laptop:h-11 mobile:invisible mobile:hidden"
         >
           تم
           {theme === "light" ? (

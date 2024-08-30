@@ -10,7 +10,7 @@ export const ThemeDropDown = ({ isShopOpen }: ThemeDropDownProp) => {
   const {darkTheme , lightTheme , systemTheme} = useContext(themeContext)
 
   return (
-    <div ref={isShopOpen} className="absolute top-[58px] left-0 w-24 rounded-lg shadow px-4 py-2 bg-zinc-50 dark:bg-zinc-800 laptop:top-[54px]">
+    <div ref={isShopOpen} className="absolute top-[58px] left-0 w-24 rounded-lg shadow px-4 py-2 bg-white dark:bg-gray-800 laptop:top-[54px]">
       <p onClick={lightTheme} className="w-full flex items-center justify-between gap-1 cursor-pointer text-sm text-zinc-700 dark:text-white">
         روشن
         <svg

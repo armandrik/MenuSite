@@ -3,16 +3,18 @@
 @tailwind utilities;
 
 /* light */
-/* background : zinc 50 */
+/* background : gray 50 */
 /* text : zinc 700 */
-/* primary : blue 600 */
-/* secondary : indego 100  */
+/* card background : white */
+/* primary : indigo 500 */
+/* secondary : indigo 100  */
 
 /* dark */
-/* background : zinc 800 */
+/* background : gray 900 */
 /* text : white */
-/* primary : blue 600 */
-/* secondary : indego 100  */
+/* card background : gray 800 */
+/* primary : indigo 500 */
+/* secondary : indigo 100  */
 
 @layer base {
     @font-face {
@@ -38,5 +40,15 @@
 
     body {
         @apply font-Dana;
+    }
+}
+
+@layer components {
+    .mobileMenuClose {
+        @apply absolute -top-56 left-0 right-0 mx-auto w-full -z-50 opacity-0 bg-gray-100 dark:bg-gray-800 shadow hidden invisible macbook:visible macbook:flex transition-all
+    }
+
+    .mobileMenuOpen {
+        @apply absolute top-[60px] left-0 right-0 mx-auto w-full z-30 opacity-100 bg-gray-100 dark:bg-gray-800 shadow hidden invisible macbook:visible macbook:flex transition-all
     }
 }
