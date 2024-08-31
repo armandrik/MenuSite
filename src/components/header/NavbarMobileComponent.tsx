@@ -1,5 +1,7 @@
 import { useContext, useState } from "react";
 import { themeContext } from "../../context/themeContext";
+import { ThemeButton } from "./ThemeButton";
+import { NavbarTagASection } from "./NavbarTagASection";
 
 export const NavbarMobileComponent = () => {
   const { theme } = useContext(themeContext);
@@ -8,50 +10,16 @@ export const NavbarMobileComponent = () => {
   return (
     <>
       <div className={isMobileMenuOpen ? "mobileMenuOpen" : "mobileMenuClose"}>
-        <div className="relative flex flex-col gap-5 items-start justify-between w-full p-5">
-          <a
-            href="#"
-            className="text-zinc-700 dark:text-white font-DanaMedium hover:text-zinc-800 dark:hover:text-gray-300 transition-all"
-          >
-            صفحه اصلی
-          </a>
-          <a
-            href="#"
-            className="text-zinc-700 dark:text-white font-DanaMedium hover:text-zinc-800 dark:hover:text-gray-300 transition-all"
-          >
-            محصولات
-          </a>
-          <a
-            href="#"
-            className="text-zinc-700 dark:text-white font-DanaMedium hover:text-zinc-800 dark:hover:text-gray-300 transition-all"
-          >
-            تعرفه‌ها
-          </a>
-          <a
-            href="#"
-            className="text-zinc-700 dark:text-white font-DanaMedium hover:text-zinc-800 dark:hover:text-gray-300 transition-all"
-          >
-            بلاگ
-          </a>
-          <a
-            href="#"
-            className="text-zinc-700 dark:text-white font-DanaMedium hover:text-zinc-800 dark:hover:text-gray-300 transition-all"
-          >
-            درباره ما
-          </a>
-          <a
-            href="#"
-            className="text-zinc-700 dark:text-white font-DanaMedium hover:text-zinc-800 dark:hover:text-gray-300 transition-all"
-          >
-            تماس با ما
-          </a>
+        <div className="hidden invisible p-5 mobile:visible mobile:block">
+          <ThemeButton />
         </div>
+        <NavbarTagASection />
       </div>
       <div
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         className={
           isMobileMenuOpen
-            ? "hidden invisible macbook:flex macbook:visible absolute left-0 right-0 top-[341px] mx-auto w-16 items-center justify-center transition-all"
+            ? "hidden invisible macbook:flex macbook:visible absolute left-0 right-0 top-[316px] mx-auto w-16 items-center justify-center transition-all"
             : "hidden invisible macbook:flex macbook:visible absolute left-0 right-0 top-[57px] mx-auto w-16 items-center justify-center transition-all"
         }
       >

@@ -45,10 +45,14 @@
 
 @layer components {
     .mobileMenuClose {
-        @apply absolute -top-56 left-0 right-0 mx-auto w-full -z-50 opacity-0 bg-gray-100 dark:bg-gray-800 shadow hidden invisible macbook:visible macbook:flex transition-all
+        @apply absolute -top-56 left-0 right-0 items-start justify-between flex-row-reverse mx-auto w-full -z-50 opacity-0 bg-gray-100 dark:bg-gray-800 hidden invisible macbook:visible macbook:flex transition-all
     }
 
     .mobileMenuOpen {
-        @apply absolute top-[60px] left-0 right-0 mx-auto w-full z-30 opacity-100 bg-gray-100 dark:bg-gray-800 shadow hidden invisible macbook:visible macbook:flex transition-all
+        @apply absolute top-[60px] left-0 right-0 items-start justify-between flex-row-reverse mx-auto w-full z-30 opacity-100 bg-gray-100 dark:bg-gray-800 hidden invisible macbook:visible macbook:flex transition-all
+    }
+
+    .mobileNavbarA {
+        @apply flex items-center justify-start gap-2 text-zinc-700 dark:text-white font-Dana text-sm hover:text-zinc-800 dark:hover:text-gray-300 transition-all mobile:text-sm mobile:font-Dana
     }
 }
