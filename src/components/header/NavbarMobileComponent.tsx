@@ -19,7 +19,7 @@ export const NavbarMobileComponent = () => {
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
         className={
           isMobileMenuOpen
-            ? "hidden invisible macbook:flex macbook:visible absolute left-0 right-0 top-[316px] mx-auto w-16 items-center justify-center transition-all"
+            ? "hidden invisible macbook:flex macbook:visible absolute left-0 right-0 top-[376px] mx-auto w-16 items-center justify-center transition-all"
             : "hidden invisible macbook:flex macbook:visible absolute left-0 right-0 top-[57px] mx-auto w-16 items-center justify-center transition-all"
         }
       >
@@ -43,7 +43,7 @@ export const NavbarMobileComponent = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6 absolute left-0 right-0 bottom-[10px] mx-auto cursor-pointer text-zinc-700 dark:text-white hover:text-zinc-800 dark:hover:text-gray-300 transition-all"
+            className="size-6 absolute left-0 right-0 bottom-[9px] mx-auto cursor-pointer text-zinc-900 dark:text-white hover:text-zinc-800 dark:hover:text-gray-300 transition-all"
           >
             <path
               strokeLinecap="round"
@@ -63,7 +63,7 @@ export const NavbarMobileComponent = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6 absolute left-0 right-0 bottom-[10px] mx-auto cursor-pointer text-zinc-700 dark:text-white hover:text-zinc-800 dark:hover:text-gray-300 transition-all"
+            className="size-6 absolute left-0 right-0 bottom-[9px] mx-auto cursor-pointer text-zinc-900 dark:text-white hover:text-zinc-800 dark:hover:text-gray-300 transition-all"
           >
             <path
               strokeLinecap="round"

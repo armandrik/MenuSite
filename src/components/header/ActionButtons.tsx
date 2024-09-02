@@ -1,9 +1,10 @@
 import { ThemeButton } from "./ThemeButton";
 
 export const ActionButtons = () => {
+
   return (
-    <div className="flex items-center justify-between gap-2 z-50 mobile:gap-0">
-      <button className="flex items-center justify-center gap-1 px-4 h-12 font-DanaMedium bg-indigo-500 text-white rounded-xl hover:bg-indigo-600 transition-all laptop:text-sm laptop:px-3 laptop:h-11">
+    <div className={`flex items-center justify-between transition-all gap-2 z-50 mobile:gap-0`}>
+      <button className="flex items-center justify-center gap-1 px-4 h-12 font-DanaMedium bg-indigo-500 text-white rounded-xl hover:bg-indigo-600 transition-all desktop:text-sm desktop:px-3 desktop:h-11">
         ورود / ثبت‌نام
         <svg
           xmlns="http://www.w3.org/2000/svg"

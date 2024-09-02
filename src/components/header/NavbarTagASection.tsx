@@ -1,6 +1,6 @@
 export const NavbarTagASection = () => {
   return (
-    <div className="relative flex flex-col gap-5 items-start justify-between w-full p-5">
+    <div className="relative flex flex-col gap-8 items-start justify-between w-full p-5">
       <a href="#" className="mobileNavbarA">
         <svg
           xmlns="http://www.w3.org/2000/svg"

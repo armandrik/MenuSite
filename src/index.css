@@ -53,6 +53,6 @@
     }
 
     .mobileNavbarA {
-        @apply flex items-center justify-start gap-2 text-zinc-700 dark:text-white font-Dana text-sm hover:text-zinc-800 dark:hover:text-gray-300 transition-all mobile:text-sm mobile:font-Dana
+        @apply flex items-center justify-start gap-2 text-zinc-700/90 dark:text-white/80 font-Dana text-sm hover:text-zinc-800 dark:hover:text-gray-300 transition-all mobile:text-sm mobile:font-Dana
     }
 }
