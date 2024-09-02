@@ -22,6 +22,20 @@ export default {
       boxShadow: {
         'shadow': '0px 1px 10px 0px rgba(0, 0, 0, 0.05)',
       },
+      // shimer button 
+      animation: {
+        shimmer: "shimmer 8s infinite",
+      },
+      keyframes: {
+        shimmer: {
+          "0%, 90%, 100%": {
+            "background-position": "calc(-100% - var(--shimmer-width)) 0",
+          },
+          "30%, 60%": {
+            "background-position": "calc(100% + var(--shimmer-width)) 0",
+          },
+        },
+      },
     },
   },
   plugins: [],
