@@ -1,10 +1,15 @@
+import { useContext } from "react";
 import AnimatedShinyText from "../magicUiComponents/AnimatedShinyText";
 import DotPattern from "../magicUiComponents/DotPattern";
 import BlurIn from "../magicUiComponents/GradualSpacing";
 import SparklesText from "../magicUiComponents/SparklesText";
 import WordPullUp from "../magicUiComponents/WorlPullUp";
+import { themeContext } from "../../context/themeContext";
+import FadeImage from "./FadeImage";
 
 export const HeroSection = () => {
+  const { theme } = useContext(themeContext);
+
   return (
     <div className="bg-gray-50 dark:bg-gray-900">
       <DotPattern />
@@ -39,6 +44,14 @@ export const HeroSection = () => {
             </svg>
           </button>
         </div>
+        <FadeImage
+          src={
+            theme === "light"
+              ? "https://startup-template-sage.vercel.app/hero-light.png"
+              : "https://startup-template-sage.vercel.app/hero-dark.png"
+          }
+          alt="hero Image"
+        />
       </div>
     </div>
   );

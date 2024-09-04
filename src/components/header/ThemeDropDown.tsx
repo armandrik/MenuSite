@@ -2,16 +2,21 @@ import { useContext } from "react";
 import { themeContext } from "../../context/themeContext";
 
 type ThemeDropDownProp = {
-    isShopOpen: React.MutableRefObject<HTMLDivElement | null>;
-  };
+  isShopOpen: React.MutableRefObject<HTMLDivElement | null>;
+};
 
 export const ThemeDropDown = ({ isShopOpen }: ThemeDropDownProp) => {
-
-  const {darkTheme , lightTheme , systemTheme} = useContext(themeContext)
+  const { darkTheme, lightTheme, systemTheme } = useContext(themeContext);
 
   return (
-    <div ref={isShopOpen} className="absolute top-[58px] left-0 w-24 rounded-lg shadow px-4 py-2 bg-white dark:bg-gray-800 laptop:top-[54px]">
-      <p onClick={lightTheme} className="w-full flex items-center justify-between gap-1 cursor-pointer text-sm text-zinc-700 dark:text-white">
+    <div
+      ref={isShopOpen}
+      className="absolute top-[58px] left-0 w-28 rounded-lg shadow p-2 bg-white dark:bg-gray-800 desktop:w-24 laptop:top-[54px]"
+    >
+      <p
+        onClick={lightTheme}
+        className="w-full flex items-center justify-start gap-1 cursor-pointer py-1 px-2 rounded hover:text-white hover:bg-indigo-500 transition-all mobile:text-sm text-zinc-700 dark:text-white desktop:text-sm"
+      >
         روشن
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -28,7 +33,10 @@ export const ThemeDropDown = ({ isShopOpen }: ThemeDropDownProp) => {
           />
         </svg>
       </p>
-      <p onClick={darkTheme} className="w-full flex items-center justify-between gap-1 my-4 cursor-pointer text-sm text-zinc-700 dark:text-white">
+      <p
+        onClick={darkTheme}
+        className="w-full flex items-center justify-start gap-1 my-3 cursor-pointer py-1 px-2 rounded hover:text-white hover:bg-indigo-500 transition-all mobile:text-sm text-zinc-700 dark:text-white desktop:text-sm"
+      >
         تیره
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -45,7 +53,10 @@ export const ThemeDropDown = ({ isShopOpen }: ThemeDropDownProp) => {
           />
         </svg>
       </p>
-      <p onClick={systemTheme} className="w-full flex items-center justify-between gap-1 cursor-pointer text-sm text-zinc-700 dark:text-white">
+      <p
+        onClick={systemTheme}
+        className="w-full flex items-center justify-start gap-1 cursor-pointer py-1 px-2 rounded hover:text-white hover:bg-indigo-500 transition-all mobile:text-sm text-zinc-700 dark:text-white desktop:text-sm"
+      >
         سیستم
         <svg
           xmlns="http://www.w3.org/2000/svg"

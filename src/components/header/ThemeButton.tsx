@@ -21,7 +21,7 @@ export const ThemeButton = () => {
   return (
     <div className="relative">
       <button
-        onClick={() => setDisplayThemeDropDown(!displayThemeDropDown)}
+        onClick={() => setDisplayThemeDropDown(true)}
         className="relative w-24 h-12 flex items-center justify-center gap-1 font-DanaMedium bg-transparent border-2 border-gray-400 rounded-xl text-zinc-700 dark:text-white dark:border-white/80 hover:border-indigo-500 hover:text-indigo-600 dark:hover:text-indigo-300 dark:hover:border-indigo-300 transition-all desktop:text-sm desktop:w-20 desktop:h-11"
       >
         تم
@@ -32,7 +32,7 @@ export const ThemeButton = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-6 laptop:size-5"
+            className="size-6 mobile:size-5"
           >
             <path
               strokeLinecap="round"
@@ -47,7 +47,7 @@ export const ThemeButton = () => {
             viewBox="0 0 24 24"
             strokeWidth={1.5}
             stroke="currentColor"
-            className="size-5 laptop:size-4"
+            className="size-5 mobile:size-4"
           >
             <path
               strokeLinecap="round"
