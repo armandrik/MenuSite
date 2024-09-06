@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { themeContext } from "../../context/themeContext";
+import { themeContext } from "../../../../context/themeContext";
 
 type ThemeDropDownProp = {
   isShopOpen: React.MutableRefObject<HTMLDivElement | null>;

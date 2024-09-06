@@ -22,7 +22,7 @@ const FadeImage: React.FC<FadeImageProps> = ({ src, alt, className }) => {
   }, [src]);
 
   return (
-    <div className={`relative mt-36 bg-gray-50 dark:bg-gray-900 shadow-heroImgShadow dark:shadow-heroImgShadowDark macbook:shadow-heroImgShadowLaptop dark:macbook:shadow-heroImgShadowLaptopDark macbook:mt-24 tablet:shadow-heroImgShadowTablet dark:tablet:shadow-heroImgShadowTabletDark mobile:shadow-heroImgShadowMobile dark:mobile:shadow-heroImgShadowMobileDark mobile:mt-14 ${className}`}>
+    <div className={`relative -mt-44 bg-gray-50 dark:bg-gray-900 shadow-heroImgShadow dark:shadow-heroImgShadowDark macbook:-mt-64 macbook:shadow-heroImgShadowLaptop dark:macbook:shadow-heroImgShadowLaptopDark tablet:shadow-heroImgShadowTablet dark:tablet:shadow-heroImgShadowTabletDark mobile:shadow-heroImgShadowMobile dark:mobile:shadow-heroImgShadowMobileDark mobile:-mt-[350px] ${className}`}>
       {isLoading ? (
         <div className="flex justify-center items-center h-full w-full">
           <div className="animate-spin rounded-full h-12 w-12 border-4 border-gray-300 border-t-gray-600"></div>

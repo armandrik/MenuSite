@@ -1,5 +1,5 @@
-import { ThemeButton } from "./ThemeButton";
-import { SignUpButton } from "./SignUpButton";
+import { ThemeButton } from "./theme/ThemeButton";
+import { SignUpButton } from "./signUp/SignUpButton";
 
 export const ActionButtons = () => {
   return (

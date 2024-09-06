@@ -3,7 +3,8 @@ import { UserAccButton } from "./UserAccButton";
 
 export const SignUpButton = () => {
   //add setUserExist for change the state
-  const [isUserExist] = useState(true);
+  //condition for check user log in
+  const [isUserExist] = useState(false);
 
   return (
     <>

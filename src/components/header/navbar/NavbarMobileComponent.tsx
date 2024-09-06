@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
-import { themeContext } from "../../context/themeContext";
-import { ThemeButton } from "./ThemeButton";
+import { themeContext } from "../../../context/themeContext";
+import { ThemeButton } from "../actionButtons/theme/ThemeButton";
 import { NavbarTagASection } from "./NavbarTagASection";
 
 export const NavbarMobileComponent = () => {

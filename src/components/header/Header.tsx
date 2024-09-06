@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import { ActionButtons } from "./ActionButtons";
-import { LogoComponent } from "./LogoComponent";
-import { NavbarComponent } from "./NavbarComponent";
-import { NavbarMobileComponent } from "./NavbarMobileComponent";
+import { ActionButtons } from "./actionButtons/ActionButtons";
+import { LogoComponent } from "./logo/LogoComponent";
+import { NavbarComponent } from "./navbar/NavbarComponent";
+import { NavbarMobileComponent } from "./navbar/NavbarMobileComponent";
 
 export const Header = () => {
 

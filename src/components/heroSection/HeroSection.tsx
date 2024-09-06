@@ -1,11 +1,12 @@
 import { useContext } from "react";
 import AnimatedShinyText from "../magicUiComponents/AnimatedShinyText";
-import DotPattern from "../magicUiComponents/DotPattern";
+// import DotPattern from "../magicUiComponents/DotPattern";
 import BlurIn from "../magicUiComponents/GradualSpacing";
 import SparklesText from "../magicUiComponents/SparklesText";
 import WordPullUp from "../magicUiComponents/WorlPullUp";
 import { themeContext } from "../../context/themeContext";
 import FadeImage from "./FadeImage";
+import DotPattern from "../magicUiComponents/DotPattern";
 
 export const HeroSection = () => {
   const { theme } = useContext(themeContext);
@@ -44,6 +45,8 @@ export const HeroSection = () => {
             </svg>
           </button>
         </div>
+      </div>
+      <div className="flex flex-col items-center justify-start px-4">
         <FadeImage
           src={
             theme === "light"
