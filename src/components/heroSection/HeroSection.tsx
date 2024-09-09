@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import AnimatedShinyText from "../magicUiComponents/AnimatedShinyText";
-// import DotPattern from "../magicUiComponents/DotPattern";
 import BlurIn from "../magicUiComponents/GradualSpacing";
 import SparklesText from "../magicUiComponents/SparklesText";
 import WordPullUp from "../magicUiComponents/WorlPullUp";
@@ -15,7 +14,7 @@ export const HeroSection = () => {
     <div className="bg-gray-50 dark:bg-gray-900">
       <DotPattern />
       {/* content section */}
-      <div className="h-dvh flex flex-col items-center justify-start pt-40 px-20 macbook:px-8 mobile:pt-32 mobile:px-4">
+      <div className="flex flex-col items-center justify-start pt-40 px-20 macbook:px-8 mobile:pt-32 mobile:px-4">
         <div className="group rounded-full border border-black/5 bg-neutral-200 text-base text-zinc-700 mb-5 transition-all ease-in hover:cursor-pointer hover:bg-neutral-200 dark:border-white/5 dark:bg-neutral-800 dark:hover:bg-neutral-800 mobile:mb-2 mobile:text-xs">
           <AnimatedShinyText className="inline-flex items-center justify-center px-4 py-1 transition ease-out hover:text-neutral-600 hover:duration-300 hover:dark:text-neutral-400">
             <span>معرفی کردن منوسایت ✨</span>
@@ -46,7 +45,7 @@ export const HeroSection = () => {
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-start px-4">
+      <div className="flex flex-col items-center justify-start px-14 mobile:px-4">
         <FadeImage
           src={
             theme === "light"

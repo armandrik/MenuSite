@@ -1,4 +1,11 @@
+import { useContext } from "react";
+import { themeContext } from "../../context/themeContext";
+import Particles from "../magicUiComponents/Particles";
+
 export const PlansCard = () => {
+
+  const {theme} = useContext(themeContext)
+
   const listOfFeatureplan = [
     "ساخت منو فیزیکی",
     "کاستوم و شخصی‌سازی منو",
@@ -7,7 +14,9 @@ export const PlansCard = () => {
   ];
 
   return (
-    <div className="rounded-lg group border dark:border-gray-700/30 flex flex-col hover:border-indigo-500 dark:hover:border-indigo-500 transition-all hover:scale-105">
+    <div className="relative overflow-hidden rounded-lg group border dark:border-gray-700/30 flex flex-col hover:border-indigo-500 dark:hover:border-indigo-500 transition-all hover:scale-105">
+      {/* <DotPattern/> */}
+      <Particles color={theme === "light" ? "#1f2937" : "#fffffff"}/>
       <div className="flex flex-col space-y-1.5 p-6">
         <h3 className="font-DanaMedium text-zinc-700 dark:text-white text-2xl text-center mb-5 mobile:text-xl">
           کارت برنزی
@@ -26,7 +35,10 @@ export const PlansCard = () => {
         <ul className="space-y-3">
           {listOfFeatureplan.map((item, index) => {
             return (
-              <li className="flex items-center gap-2 text-zinc-500 dark:text-gray-400" key={index}>
+              <li
+                className="flex items-center gap-2 text-zinc-500 dark:text-gray-400"
+                key={index}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -34,9 +46,9 @@ export const PlansCard = () => {
                   viewBox="0 0 24 24"
                   fill="none"
                   stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   className="h-5 w-5 text-emerald-500"
                 >
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
