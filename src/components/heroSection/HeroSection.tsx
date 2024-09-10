@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import AnimatedShinyText from "../magicUiComponents/AnimatedShinyText";
-import BlurIn from "../magicUiComponents/GradualSpacing";
+import BlurIn from "../magicUiComponents/BlurIn";
 import SparklesText from "../magicUiComponents/SparklesText";
 import WordPullUp from "../magicUiComponents/WorlPullUp";
 import { themeContext } from "../../context/themeContext";
