@@ -14,14 +14,14 @@ export const PlansCard = () => {
   ];
 
   return (
-    <div className="relative overflow-hidden rounded-lg group border dark:border-gray-700/30 flex flex-col hover:border-indigo-500 dark:hover:border-indigo-500 transition-all hover:scale-105">
+    <div className="relative overflow-hidden rounded-lg group border dark:border-gray-700/30 flex flex-col hover:border-indigo-500 dark:hover:border-indigo-500 transition-all hover:scale-105 mobile:hover:scale-[1]">
       {/* <DotPattern/> */}
       <Particles color={theme === "light" ? "#1f2937" : "#fffffff"}/>
       <div className="flex flex-col space-y-1.5 p-6">
-        <h3 className="font-DanaMedium text-zinc-700 dark:text-white text-2xl text-center mb-5 mobile:text-xl">
+        <h3 className="font-DanaMedium text-zinc-700 dark:text-white/90 text-2xl text-center mb-5 mobile:text-xl">
           کارت برنزی
         </h3>
-        <p className="text-zinc-700 dark:text-white text-lg mobile:text-base">
+        <p className="text-zinc-700 dark:text-white/90 text-lg mobile:text-base">
           کارت برنزی بهترین کارت برای شروع
         </p>
       </div>
@@ -30,7 +30,7 @@ export const PlansCard = () => {
           <span className="text-4xl font-DanaDemiBold text-indigo-500 dark:text-indigo-400 macbook:text-3xl mobile:text-2xl">
             100تومان
           </span>
-          <span className="text-sm text-zinc-700 dark:text-white">/ماهانه</span>
+          <span className="text-sm text-zinc-700 dark:text-white/90">/ماهانه</span>
         </div>
         <ul className="space-y-3">
           {listOfFeatureplan.map((item, index) => {
@@ -62,7 +62,7 @@ export const PlansCard = () => {
       </div>
       <div className="w-[90%] h-px mx-auto bg-gray-200 dark:bg-gray-700/50"></div>
       <div className="flex items-center p-6 mt-auto">
-        <button className="font-DanaDemiBold rounded-md text-indigo-500 dark:text-white border border-indigo-500 bg-transparent w-full py-3 group-hover:bg-indigo-500 group-hover:text-white transition-all">
+        <button className="font-DanaDemiBold rounded-md text-indigo-500 dark:text-white/90 border border-indigo-500 bg-transparent w-full py-3 group-hover:bg-indigo-500 group-hover:text-white transition-all">
           شروع رایگان
         </button>
       </div>

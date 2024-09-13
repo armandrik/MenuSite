@@ -35,7 +35,7 @@ export default function WordPullUp({
       initial="hidden"
       animate="show"
       className={cn(
-        "font-display w-[800px] font-DanaDemiBold text-6xl text-zinc-900 text-center dark:text-white leading-[5rem] tracking-[-0.02em] drop-shadow-sm macbook:text-4xl macbook:w-[600px] macbook:mt-5 mobile:text-2xl mobile:w-full",
+        "font-display w-[800px] font-DanaDemiBold text-6xl text-zinc-700 dark:text-white text-center leading-[5rem] tracking-[-0.02em] drop-shadow-sm macbook:text-4xl macbook:w-[600px] macbook:mt-5 mobile:text-2xl mobile:w-full",
         className,
       )}
     >

@@ -1,4 +1,5 @@
 import { AppFeature } from "./components/appFeature/AppFeature";
+import { Blog } from "./components/blog/Blog";
 import { Faq } from "./components/FAQ/Faq";
 import { Header } from "./components/header/Header";
 import { HeroSection } from "./components/heroSection/HeroSection";
@@ -12,6 +13,7 @@ function App() {
       <AppFeature />
       <Plans />
       <Faq/>
+      <Blog/>
     </div>
   );
 }

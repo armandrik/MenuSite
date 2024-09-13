@@ -36,8 +36,8 @@ export const Faq = () => {
   };
 
   return (
-    <div className="w-[700px] mx-auto pb-40 px-10 mt-10 macbook:w-[600px] mobile:w-full">
-      <h1 className="font-DanaDemiBold text-4xl mb-16 text-zinc-700 text-center dark:text-white mobile:text-2xl">
+    <div className="w-[700px] mx-auto px-10 mt-10 mb-20 macbook:w-[600px] mobile:w-full">
+      <h1 className="font-DanaDemiBold text-4xl mb-16 text-zinc-700 text-center dark:text-white/90 mobile:text-2xl">
         سوالات پرتکرار
       </h1>
       {faqs.map((item) => (
@@ -49,7 +49,7 @@ export const Faq = () => {
         >
           <h1
             onClick={() => toggleAnswer(item.id)}
-            className="flex items-center justify-between cursor-pointer mb-5 text-zinc-700 dark:text-white font-DanaMedium text-lg macbook:text-base"
+            className="flex items-center justify-between cursor-pointer mb-5 text-zinc-700 dark:text-white/90 font-DanaMedium text-lg macbook:text-base"
           >
             {item.question}
             <svg
@@ -74,6 +74,7 @@ export const Faq = () => {
           </p>
         </div>
       ))}
+      <p className="text-zinc-700/80 dark:text-white/70 text-sm mobile:text-xs text-center">هنوز سوالی دارید؟ به ما ایمیل بزنید support@gmail.com</p>
     </div>
   );
 };

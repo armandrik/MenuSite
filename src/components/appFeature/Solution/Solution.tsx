@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { themeContext } from "../../../context/themeContext";
-import Ripple from "../../magicUiComponents/Ripple";
 import GridPattern from "../../magicUiComponents/GridPattern";
 import DotPattern from "../../magicUiComponents/DotPattern";
 
@@ -12,7 +11,7 @@ export const Solution = () => {
       <p className="text-center text-indigo-500 dark:text-indigo-400 mb-4">
         راه‌حل
       </p>
-      <h1 className="text-center text-zinc-700 dark:text-white px-4 font-DanaDemiBold text-4xl mb-4 mobile:text-2xl">
+      <h1 className="text-center text-zinc-700 dark:text-white/90 px-4 font-DanaDemiBold text-4xl mb-4 mobile:text-2xl">
         کسب و کار خود را با گردش کار هوش مصنوعی تقویت کنید
       </h1>
       <p className="text-zinc-700/80 dark:text-white/70 text-center mx-auto w-2/5 mb-24 macbook:w-[90%]">
@@ -21,12 +20,12 @@ export const Solution = () => {
         شده است.
       </p>
       <div className="grid grid-rows-2 grid-cols-3 gap-5 max-w-[1240px] px-10 mx-auto laptop:grid-rows-3 laptop:grid-cols-2 laptop:max-w-[900px] tablet:grid-cols-1 tablet:px-5 tablet:grid-rows-5 tablet:flex tablet:flex-col tablet:items-center tablet:justify-center">
-        <div className="relative bg-gray-100 dark:bg-gray-800/10 rounded-lg h-96 px-5 py-6 group overflow-hidden tablet:h-80">
-          <Ripple />
+        <div className="relative bg-gray-100 dark:bg-gray-800/10 rounded-lg h-80 px-5 py-6 group overflow-hidden">
+          <DotPattern className="fill-indigo-400/40 dark:fill-indigo-400/40"/>
           <p className="font-DanaMedium text-indigo-500 dark:text-indigo-400 mb-3">
             یکپارچه سازی بدون درز
           </p>
-          <p className="text-zinc-700 dark:text-white">
+          <p className="text-zinc-700 dark:text-white/90">
             راه حل های هوش مصنوعی ما را به راحتی در جریان کار و سیستم های موجود
             خود ادغام کنید تا عملکردی روان و کارآمد داشته باشید.
           </p>
@@ -39,21 +38,15 @@ export const Solution = () => {
                   : "https://startup-template-sage.vercel.app/hero-dark.png"
               }
               alt="image"
-              style={{
-                maskImage:
-                  "linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 90%)",
-                WebkitMaskImage:
-                  "linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 90%)",
-              }}
             />
           </div>
         </div>
-        <div className="relative bg-gray-100 dark:bg-gray-800/10 rounded-lg h-96 px-5 py-6 group overflow-hidden tablet:h-80">
-          <Ripple />
+        <div className="relative bg-gray-100 dark:bg-gray-800/10 rounded-lg h-80 px-5 py-6 group overflow-hidden">
+          <GridPattern className="text-indigo-200/50 dark:text-indigo-400/30"/>
           <p className="font-DanaMedium text-indigo-500 dark:text-indigo-400 mb-3">
             یکپارچه سازی بدون درز
           </p>
-          <p className="text-zinc-700 dark:text-white">
+          <p className="text-zinc-700 dark:text-white/90">
             راه حل های هوش مصنوعی ما را به راحتی در جریان کار و سیستم های موجود
             خود ادغام کنید تا عملکردی روان و کارآمد داشته باشید.
           </p>
@@ -66,12 +59,6 @@ export const Solution = () => {
                   : "https://startup-template-sage.vercel.app/hero-dark.png"
               }
               alt="image"
-              style={{
-                maskImage:
-                  "linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 90%)",
-                WebkitMaskImage:
-                  "linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 90%)",
-              }}
             />
           </div>
         </div>
@@ -80,7 +67,7 @@ export const Solution = () => {
           <p className="font-DanaMedium text-indigo-500 dark:text-indigo-400 mb-3">
             یکپارچه سازی بدون درز
           </p>
-          <p className="text-zinc-700 dark:text-white">
+          <p className="text-zinc-700 dark:text-white/90">
             راه حل های هوش مصنوعی ما را به راحتی در جریان کار و سیستم های موجود
             خود ادغام کنید تا عملکردی روان و کارآمد داشته باشید.
           </p>
@@ -93,12 +80,6 @@ export const Solution = () => {
                   : "https://startup-template-sage.vercel.app/hero-dark.png"
               }
               alt="image"
-              style={{
-                maskImage:
-                  "linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 90%)",
-                WebkitMaskImage:
-                  "linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0) 90%)",
-              }}
             />
           </div>
         </div>
@@ -107,7 +88,7 @@ export const Solution = () => {
           <p className="font-DanaMedium text-indigo-500 dark:text-indigo-400 mb-3">
             یکپارچه سازی بدون درز
           </p>
-          <p className="text-zinc-700 dark:text-white">
+          <p className="text-zinc-700 dark:text-white/90">
             راه حل های هوش مصنوعی ما را به راحتی در جریان کار و سیستم های موجود
             خود ادغام کنید تا عملکردی روان و کارآمد داشته باشید.
           </p>
