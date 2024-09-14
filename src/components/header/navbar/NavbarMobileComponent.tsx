@@ -20,7 +20,7 @@ export const NavbarMobileComponent = () => {
         className={
           isMobileMenuOpen
             ? "hidden invisible macbook:flex macbook:visible absolute left-0 right-0 top-[376px] mx-auto w-16 items-center justify-center transition-all"
-            : "hidden invisible macbook:flex macbook:visible absolute left-0 right-0 top-[57px] mx-auto w-16 items-center justify-center transition-all"
+            : "hidden invisible macbook:flex macbook:visible absolute left-0 right-0 top-[56px] mx-auto w-16 items-center justify-center transition-all"
         }
       >
         <svg
